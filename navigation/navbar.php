@@ -1,6 +1,6 @@
 <ul class="navbar">
-  <li class="dektop_nav"><a href=""><i class="icon-edit"></i>Status</a></li>
-  <li class="dektop_nav"><a href=""><i class="icon-gallery"></i> Gallery</a></li>
+  <li class="dektop_nav"><a href="<?php echo FOLDER_PATH_HTTP.'dashboard.php'?>"><i class="icon-edit"></i>Status</a></li>
+  <li class="dektop_nav"><a href="<?php echo FOLDER_PATH_HTTP.'gallery.php'?>"><i class="icon-gallery"></i> Gallery</a></li>
   <li class="dektop_nav"><a href=""><i class="icon-friend"></i> Friends</a></li>
   <li class="dektop_nav">
     <a href="" class="parent">

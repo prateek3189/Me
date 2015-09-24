@@ -43,6 +43,10 @@
 	
 	//Image Path
 	define('IMAGE_PATH_HTTP', FOLDER_PATH_HTTP.'images');
+  
+  //Post Path
+	define('POST_IMAGE_HTTP', FOLDER_PATH_HTTP.'post/');
+  define('POST_IMAGE', FOLDER_PATH.'post');
 	
 	//CSS Path
 	define('CSS_PATH_HTTP', FOLDER_PATH_HTTP.'css');

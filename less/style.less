@@ -1,6 +1,9 @@
 @import "_variable.less";
 @import "_icons.less";
 
+/*Mixins*/
+.font-comic{font-family:Comic Sans MS;}
+.font-common{font-family:helvetica, arial, sans-serif;}
 /*Common CSS*/
 *{
   box-sizing:border-box;
@@ -11,9 +14,9 @@ a{
 body{
   padding:0;
   margin:0;
-  font-family:helvetica, arial, sans-serif;
   font-size:14px;
   background:@white;
+  .font-common();
 }
 ul{
   list-style:none; 
@@ -33,6 +36,7 @@ h1,h2,h3,h4,h5,h6{
   width:1024px;
   margin:0 auto;
   margin-bottom:30px;
+  height:100%;
 }
 .parent{
   position:relative;
@@ -175,11 +179,12 @@ ul.navbar{
 /*Left side for notification*/
 .left_side{
   width:25%;
-  height:100%;
+  height:600px;
   float:left;
   border:1px solid @blue1;
   padding:5px;
   background:@white;
+  z-index:100;
   .notification_bar{
     li{
       width:100%;
@@ -215,15 +220,36 @@ ul.navbar{
 .content{
   width:72%;
   float:right;
+  
+  /*Dashboard*/
   .update_status{
     li{
       position:relative;
       box-shadow:0px 12px 20px -15px @grayC;
       padding:10px;
+      margin-bottom:50px;
       .action_icon{
         position:absolute;
         top:10px;
         right:10px;
+      }
+    }
+    textarea{
+      resize:none;
+      overflow:auto;
+      border:1px solid @grayC;
+      width:80%;
+      height:100px;
+      .font-comic();
+    }
+    .button-div{
+      margin:20px 0 10px 0px;
+      a{
+        margin-right:10px;
+        background:@blue1;
+        color:@white;
+        padding:5px;
+        border-radius:5px;
       }
     }
     .user_data{
@@ -251,6 +277,45 @@ ul.navbar{
       color:@gray6;
       line-height:20px;
       text-align:justify;
+      .font-comic();
+      .image_container{
+        width:100%;
+        max-height:350px;
+        display:inline-block;
+        margin-top:20px;
+        img{
+          max-height:350px;
+        }
+      }
+      .image_desc{
+        width:100%;
+        display:block;
+        font-size:13px;
+        margin-top:10px;
+      }
+    }
+    .post_pic, .post_vdo{
+      border:1px solid @grayC;
+      padding:20px;
+      input{
+        width:400px;
+        display:inline-block;
+        margin:10px 0; 
+        height:30px;
+        padding:0 5px;
+      }
+    }
+  }
+  
+  /*Gallery Page*/
+  .gallery_tab{
+    button{
+      border:1px solid @grayC;
+      height:40px;
+      margin:0;
+      width:48%;
+      background:@blue1;
+      color:@white;
     }
   }
 }
