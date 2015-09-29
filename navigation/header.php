@@ -33,7 +33,7 @@
 		<?php 
       if($_SESSION['login'] == '1'){
     ?>
-          <div class="welcome_heading">Welcome <span class="username_text">Prateek Magarde</span> | <a href="<?php echo FOLDER_PATH_HTTP;?>logout.php" class="header_logout_link">Logout</a> </div>
+          <div class="welcome_heading">Welcome <a href="<?php echo FOLDER_PATH_HTTP.'profile.php';?>" class="username_text">Prateek Magarde</span> | <a href="<?php echo FOLDER_PATH_HTTP;?>logout.php" class="header_logout_link">Logout</a> </div>
           <?php
       }
     ?>

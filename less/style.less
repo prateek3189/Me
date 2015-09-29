@@ -32,6 +32,12 @@ h1,h2,h3,h4,h5,h6{
 .red{
   color:@red1;
 }
+.fl{
+  float:left!important;
+}
+.fr{
+  float:right!important;
+}
 .container{
   width:1024px;
   margin:0 auto;
@@ -276,7 +282,6 @@ ul.navbar{
       font-size:16px;
       color:@gray6;
       line-height:20px;
-      text-align:justify;
       .font-comic();
       .image_container{
         width:100%;
@@ -285,6 +290,7 @@ ul.navbar{
         margin-top:20px;
         img{
           max-height:350px;
+          width:100%;
         }
       }
       .image_desc{
@@ -348,6 +354,174 @@ ul.navbar{
           border:5px solid @grayC;
           padding:2px;
         }
+      }
+    }
+  }
+  
+  /*Friends list*/
+  .friends_list{
+    margin:20px 0;
+    li{
+      width:250px;
+      float:left;
+      padding:10px 0;
+    }
+    img{
+      border:1px solid @grayC;
+      padding:5px;
+      float:left;
+    }
+    a{
+      float:left;
+      color:@blue1;
+      font-size:18px;
+      margin:10px;
+    }
+    .friends_icon{
+      width:50%;
+      float:left;
+      padding-left:10px;
+      a{
+        margin:0 5px 0 0;
+      }
+    }
+  }
+  
+  /*User Profile*/
+  .profile{
+    .profile_detail{
+      width:100%;
+      display:inline-block;
+      img{
+        float:left;
+      }
+      ul{
+        float:left;
+        li{
+          padding-left:10px;
+          margin-top:5px;
+          color:@blue1;
+          span{
+            font-size:18px;
+          }
+          label{
+            color:@gray6;
+            width:100px;
+          }          
+        }
+      }
+    }
+    .profile_status, .profile_friends, .profile_image{
+      float:left;
+      margin:20px 0 0 0;
+      width:45%;
+      background:@grayFA;
+    }
+    .profile_friends, .profile_image{
+      margin:20px 0 0 30px;
+      ul{
+        margin-left:25px;
+      }
+      li{
+        margin:10px 0;
+        width:100px;
+        float:left;
+        img{
+          float:left;
+        }
+        a{
+          float:left;
+          color:@blue1;
+          margin-top:5px;
+        }
+      }
+    }
+  }
+  
+  /*Messages*/
+  .message_list{
+    margin:20px 0;
+    li{
+      width:100%;
+      float:left;
+      padding:20px 0;
+      box-shadow:0px 7px 20px -10px @grayC;
+    }
+    img{
+      border:1px solid @grayC;
+      padding:5px;
+      float:left;
+    }
+    a{
+      float:left;
+      color:@blue1;
+      font-size:18px;
+      margin:10px;
+    }
+    .message_icon{
+      width:100px;
+      float:right;
+      padding-left:10px;
+      a{
+        margin:0 5px 0 0;
+      }
+    }
+    ul.message_thread{
+      border:1px solid @grayC;
+      border-radius:10px;
+      float:left;
+      width:100%;
+      padding:10px;
+      margin-top:25px;
+      li{
+        box-shadow:none;
+        .font-comic();
+        font-size:16px;
+        padding:10px;
+        .message_text_mine, .message_text_your{
+          width:85%;
+          float:left;
+          text-align:right;
+          span{
+            border:1px solid @grayC;
+            padding:10px;
+            border-radius:25px;
+            color:@gray3;
+            float:right;
+            font-size:14px;
+          }
+          font{
+            font-size:10px;
+            margin-left:10px;
+            color:@blue1;
+          }
+          label{
+            color:@blue1;
+          }
+        }
+        .message_text_your{
+          text-align:left;
+          span{
+            float:left;
+          }
+        }
+      }
+    }
+    .write_textbox{
+      width:100%;
+      margin-top:30px;
+      float:left;
+      textarea{
+        width:100%;
+        height:100px;
+        resize:none;
+        border-radius:10px;
+        .font-comic();
+        padding:10px;
+        font-size:14px;
+      }
+      button{
+        margin-top:10px;
       }
     }
   }

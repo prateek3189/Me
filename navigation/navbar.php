@@ -3,7 +3,7 @@
   <li class="dektop_nav"><a href="<?php echo FOLDER_PATH_HTTP.'gallery.php'?>"><i class="icon-gallery"></i> Gallery</a></li>
   <li class="dektop_nav"><a href="<?php echo FOLDER_PATH_HTTP.'friends.php'?>"><i class="icon-friend"></i> Friends</a></li>
   <li class="dektop_nav">
-    <a href="" class="parent">
+    <a href="<?php echo FOLDER_PATH_HTTP.'messages.php'?>" class="parent">
       <span class="message_count">500</span>
       <i class="icon-message"></i> Messages
     </a>
@@ -13,7 +13,7 @@
   <li class="mobile_nav"><a href="<?php echo FOLDER_PATH_HTTP.'gallery.php'?>"><i class="icon-gallery"></i></a></li>
   <li class="mobile_nav"><a href="<?php echo FOLDER_PATH_HTTP.'friends.php'?>"><i class="icon-friend"></i></a></li>
   <li class="mobile_nav">
-    <a href="" class="parent">
+    <a href="<?php echo FOLDER_PATH_HTTP.'messages.php'?>" class="parent">
       <span class="message_count">500</span>
       <i class="icon-message"></i>
     </a>

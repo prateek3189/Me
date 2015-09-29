@@ -83,6 +83,7 @@
   }
   .content{
     width:100%;
+    margin-bottom:20px;
     .update_status{
       .post_data{
          .image_container{
@@ -95,6 +96,44 @@
         input{
           width:100%;
         }
+      }
+    }
+    .profile{
+       .profile_friends,.profile_image, h3{
+        display:none;
+       }
+       .profile_status{
+        width:100%;
+        .post_time{
+          color:@blue1;
+          font-size:12px;
+          text-align:initial;
+        }
+       }
+    }
+    .message_list{
+      margin:0;
+      .message_icon{
+        width:25%;
+      }
+      li{
+        padding:20px;
+      }
+      ul.message_thread{
+        border:0;
+        margin:0;
+        li{
+          .message_text_mine, .message_text_your{
+            span{
+              font-size:12px;
+            }
+          }
+        }
+      }
+      .write_textbox{
+        padding:0 20px;
+        margin:0;
+        margin-bottom:20px;
       }
     }
   }
