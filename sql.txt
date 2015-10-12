@@ -1,0 +1,12 @@
+SELECT SUBSTRING_INDEX(SUBSTRING_INDEX(ip, '-', 1), '-', -1) as memberfirst,
+       SUBSTRING_INDEX(SUBSTRING_INDEX(ip, '-', 2), '-', -1) as memberlast
+FROM   test
+
+
+
+| 1 |
+| 2 |
+| 3 |
+| 4-8 |
+| 9 |
+
