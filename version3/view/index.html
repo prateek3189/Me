@@ -1,0 +1,35 @@
+<?php 
+	include_once(NAVIGATION_PATH."/header.php");
+?>
+<div class="container">
+  <div class="login_box">
+    <form method="POST" action="<?php echo FOLDER_PATH_HTTP;?>dashboard.php" onsubmit="return validateForm(this)">
+      <ul>
+        <li>
+          <h3>Login</h3>
+        </li>
+        <li>
+          <label><strong class="red">*</strong> Username:</label>
+          <input type="text" class="inputfield required" data-valid="Please enter Username" value="" name="username" id="username">
+          <span class="errormessage" id="error_username"></span>
+        </li>
+        <li>
+          <label><strong class="red">*</strong> Password:</label>
+          <input type="password" class="inputfield required" data-valid="Please enter Password" value="" name="password" id="password">
+          <span class="errormessage" id="error_password"></span>
+        </li>
+        <li class="login_button">
+          <button type="submit" class="inputbutton" name="submit" id="submit">Login</button>
+          <a class="app_link" href="">Reset</a>
+        </li>
+        <li class="login_button">
+          <a class="signup_link" href="<?php echo FOLDER_PATH_HTTP;?>signup.php">Sign Up</a>
+          <a class="forgot_password_link" href="<?php echo FOLDER_PATH_HTTP;?>forgot_password.php">Forgot Password</a>
+        </li>
+      </ul>
+    </form>
+  </div>  
+</div>
+  <?php 
+	include_once(NAVIGATION_PATH."/footer.php");
+?>

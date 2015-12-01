@@ -1,0 +1,63 @@
+<?php 
+	include(NAVIGATION_PATH."/header.php");
+?>
+<div class="container">
+  <?php include(NAVIGATION_PATH."/navbar.php");?>
+  <?php include(NAVIGATION_PATH."/notification.php");?>
+  <div class="content">
+      <div class="message_list">
+        <h3>Bruce Wayn</h3>
+        <ul class="message_thread">
+          <li>
+            <div class="message_text_mine">
+              <span>
+                <label>Me:</label> This is a test message <font>02.30pm</font>
+              </span>
+            </div>
+            <div class="message_icon">
+              <a href=""><i class="icon-delete"></i></a>
+            </div>
+          </li>
+          <li>
+            <div class="message_text_your">
+              <span>
+                <label>Bruce:</label> This is a test message<font>02.30pm</font>
+              </span>
+            </div>
+            <div class="message_icon">
+              <a href=""><i class="icon-delete"></i></a>
+            </div>
+          </li>
+          <li>
+            <div class="message_text_mine">
+              <span>
+                <label>Me:</label> This is a test message<font>02.30pm</font>
+              </span>
+            </div>
+            <div class="message_icon">
+              <a href=""><i class="icon-delete"></i></a>
+            </div>
+          </li>
+          <li>
+            <div class="message_text_your">
+              <span>
+                <label>Bruce:</label> This is a test message. This is a test message. This is a test message. This is a test message. This is a test message. This is a test message. This is a test message. This is a test message.<font>02.30pm</font>
+              </span>
+            </div>
+            <div class="message_icon">
+              <a href=""><i class="icon-delete"></i></a>
+            </div>
+          </li>
+        </ul>
+        <div class="write_textbox">
+          <textarea id="write_message" name="write_message" placeholder="Say something to Bruce..."></textarea>
+          <button id="send" name="send" class="inputbutton fl">Send</button>
+          <a href="">Clear</a>
+          <a href="<?php echo FOLDER_PATH_HTTP.'messages.php';?>">Back</a>
+        </div>
+      </div>
+    </div>
+</div>
+<?php 
+	include(NAVIGATION_PATH."/footer.php");
+?>

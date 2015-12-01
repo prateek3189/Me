@@ -1,0 +1,314 @@
+<?php 
+	include(NAVIGATION_PATH."/header.php");
+?>
+<div class="container">
+  <?php include(NAVIGATION_PATH."/navbar.php");?>
+  <?php include(NAVIGATION_PATH."/notification.php");?>
+  <div class="content">
+      <div class="gallery_tab">
+        <button onclick="return changeGalleryType('I')">Photos</button>
+        <button onclick="return changeGalleryType('V')">Videos</button>
+        <button onclick="return changeGalleryType('A')">Audio</button>
+      </div>
+      <div class="gallary_grid" id="image_grid">
+        <ul>
+          <li id="image_1">
+            <img onclick="return openMediaPopup('I')"  src="<?php echo UPLOAD_PATH_HTTP;?>/1.jpg" width="100" height="100"/>
+            <span onclick="return openMediaPopup('I')"  class="media_desc">test Image title</span>
+            <span onclick="return openMediaPopup('I')"  class="media_date">Mar 19,2015</span>
+            <a href="javascript:void(0)" onclick="return deleteImage('1')"><i class="icon-delete"></i></a>
+          </li>
+          <li onclick="return openMediaPopup('I')">
+            <img src="<?php echo UPLOAD_PATH_HTTP;?>/1.jpg" width="100" height="100"/>
+            <span class="media_desc">Image title</span>
+            <span class="media_date">Mar 19,2015</span>
+            <a href="javascript:void(0)" onclick="return deleteImage('1')"><i class="icon-delete"></i></a>
+          </li>
+          <li onclick="return openMediaPopup('I')">
+            <img src="<?php echo UPLOAD_PATH_HTTP;?>/1.jpg" width="100" height="100"/>
+            <span class="media_desc">Image title</span>
+            <span class="media_date">Mar 19,2015</span>
+            <a href="javascript:void(0)" onclick="return deleteImage('1')"><i class="icon-delete"></i></a>
+          </li>
+          <li onclick="return openMediaPopup('I')">
+            <img src="<?php echo UPLOAD_PATH_HTTP;?>/1.jpg" width="100" height="100"/>
+            <span class="media_desc">Image title</span>
+            <span class="media_date">Mar 19,2015</span>
+            <a href="javascript:void(0)" onclick="return deleteImage('1')"><i class="icon-delete"></i></a>
+          </li>
+          <li onclick="return openMediaPopup('I')">
+            <img src="<?php echo UPLOAD_PATH_HTTP;?>/1.jpg" width="100" height="100"/>
+            <span class="media_desc">Image title</span>
+            <span class="media_date">Mar 19,2015</span>
+            <a href="javascript:void(0)" onclick="return deleteImage('1')"><i class="icon-delete"></i></a>
+          </li>
+          <li onclick="return openMediaPopup('I')">
+            <img src="<?php echo UPLOAD_PATH_HTTP;?>/1.jpg" width="100" height="100"/>
+            <span class="media_desc">Image title</span>
+            <span class="media_date">Mar 19,2015</span>
+            <a href="javascript:void(0)" onclick="return deleteImage('1')"><i class="icon-delete"></i></a>
+          </li>
+          <li onclick="return openMediaPopup('I')">
+            <img src="<?php echo UPLOAD_PATH_HTTP;?>/1.jpg" width="100" height="100"/>
+            <span class="media_desc">Image title</span>
+            <span class="media_date">Mar 19,2015</span>
+            <a href="javascript:void(0)" onclick="return deleteImage('1')"><i class="icon-delete"></i></a>
+          </li>
+          <li onclick="return openMediaPopup('I')">
+            <img src="<?php echo UPLOAD_PATH_HTTP;?>/1.jpg" width="100" height="100"/>
+            <span class="media_desc">Image title</span>
+            <span class="media_date">Mar 19,2015</span>
+            <a href="javascript:void(0)" onclick="return deleteImage('1')"><i class="icon-delete"></i></a>
+          </li>
+          <li onclick="return openMediaPopup('I')">
+            <img src="<?php echo UPLOAD_PATH_HTTP;?>/1.jpg" width="100" height="100"/>
+            <span class="media_desc">Image title</span>
+            <span class="media_date">Mar 19,2015</span>
+            <a href="javascript:void(0)" onclick="return deleteImage('1')"><i class="icon-delete"></i></a>
+          </li>
+          <li onclick="return openMediaPopup('I')">
+            <img src="<?php echo UPLOAD_PATH_HTTP;?>/1.jpg" width="100" height="100"/>
+            <span class="media_desc">Image title</span>
+            <span class="media_date">Mar 19,2015</span>
+            <a href="javascript:void(0)" onclick="return deleteImage('1')"><i class="icon-delete"></i></a>
+          </li>
+          <li onclick="return openMediaPopup('I')">
+            <img src="<?php echo UPLOAD_PATH_HTTP;?>/1.jpg" width="100" height="100"/>
+            <span class="media_desc">Image title</span>
+            <span class="media_date">Mar 19,2015</span>
+            <a href="javascript:void(0)" onclick="return deleteImage('1')"><i class="icon-delete"></i></a>
+          </li>
+          <li onclick="return openMediaPopup('I')">
+            <img src="<?php echo UPLOAD_PATH_HTTP;?>/1.jpg" width="100" height="100"/>
+            <span class="media_desc">Image title</span>
+            <span class="media_date">Mar 19,2015</span>
+            <a href="javascript:void(0)" onclick="return deleteImage('1')"><i class="icon-delete"></i></a>
+          </li>
+          <li onclick="return openMediaPopup('I')">
+            <img src="<?php echo UPLOAD_PATH_HTTP;?>/1.jpg" width="100" height="100"/>
+            <span class="media_desc">Image title</span>
+            <span class="media_date">Mar 19,2015</span>
+            <a href="javascript:void(0)" onclick="return deleteImage('1')"><i class="icon-delete"></i></a>
+          </li>
+          <li onclick="return openMediaPopup('I')">
+            <img src="<?php echo UPLOAD_PATH_HTTP;?>/1.jpg" width="100" height="100"/>
+            <span class="media_desc">Image title</span>
+            <span class="media_date">Mar 19,2015</span>
+            <a href="javascript:void(0)" onclick="return deleteImage('1')"><i class="icon-delete"></i></a>
+          </li>
+          <li onclick="return openMediaPopup('I')">
+            <img src="<?php echo UPLOAD_PATH_HTTP;?>/1.jpg" width="100" height="100"/>
+            <span class="media_desc">Image title</span>
+            <span class="media_date">Mar 19,2015</span>
+            <a href="javascript:void(0)" onclick="return deleteImage('1')"><i class="icon-delete"></i></a>
+          </li>
+          <li onclick="return openMediaPopup('I')">
+            <img src="<?php echo UPLOAD_PATH_HTTP;?>/1.jpg" width="100" height="100"/>
+            <span class="media_desc">Image title</span>
+            <span class="media_date">Mar 19,2015</span>
+            <a href="javascript:void(0)" onclick="return deleteImage('1')"><i class="icon-delete"></i></a>
+          </li>          
+        </ul>
+      </div>
+      <div class="gallary_grid" id="video_grid" style="display:none;">
+        <ul>
+          <li id="video_1">
+            <img onclick="return openMediaPopup('V')" src="<?php echo UPLOAD_PATH_HTTP;?>/1.jpg" width="100" height="100"/>
+            <span class="media_desc" onclick="return openMediaPopup('V')">Video title</span>
+            <span class="media_date" onclick="return openMediaPopup('V')">Mar 19,2015</span>
+            <a href="javascript:void(0)" onclick="return deleteVideo('1')"><i class="icon-delete"></i></a>
+          </li>
+          <li onclick="return openMediaPopup('I')">
+            <img src="<?php echo UPLOAD_PATH_HTTP;?>/1.jpg" width="100" height="100"/>
+            <span class="media_desc">Video title</span>
+            <span class="media_date">Mar 19,2015</span>
+            <a href="javascript:void(0)" onclick="return deleteVideo('1')"><i class="icon-delete"></i></a>
+          </li>
+          <li onclick="return openMediaPopup('I')">
+            <img src="<?php echo UPLOAD_PATH_HTTP;?>/1.jpg" width="100" height="100"/>
+            <span class="media_desc">Video title</span>
+            <span class="media_date">Mar 19,2015</span>
+            <a href="javascript:void(0)" onclick="return deleteVideo('1')"><i class="icon-delete"></i></a>
+          </li>
+          <li onclick="return openMediaPopup('I')">
+            <img src="<?php echo UPLOAD_PATH_HTTP;?>/1.jpg" width="100" height="100"/>
+            <span class="media_desc">Video title</span>
+            <span class="media_date">Mar 19,2015</span>
+            <a href="javascript:void(0)" onclick="return deleteVideo('1')"><i class="icon-delete"></i></a>
+          </li>
+          <li onclick="return openMediaPopup('I')">
+            <img src="<?php echo UPLOAD_PATH_HTTP;?>/1.jpg" width="100" height="100"/>
+            <span class="media_desc">Video title</span>
+            <span class="media_date">Mar 19,2015</span>
+            <a href="javascript:void(0)" onclick="return deleteVideo('1')"><i class="icon-delete"></i></a>
+          </li>
+          <li onclick="return openMediaPopup('I')">
+            <img src="<?php echo UPLOAD_PATH_HTTP;?>/1.jpg" width="100" height="100"/>
+            <span class="media_desc">Video title</span>
+            <span class="media_date">Mar 19,2015</span>
+            <a href="javascript:void(0)" onclick="return deleteVideo('1')"><i class="icon-delete"></i></a>
+          </li>
+
+          <li onclick="return openMediaPopup('I')">
+            <img src="<?php echo UPLOAD_PATH_HTTP;?>/1.jpg" width="100" height="100"/>
+            <span class="media_desc">Video title</span>
+            <span class="media_date">Mar 19,2015</span>
+            <a href="javascript:void(0)" onclick="return deleteVideo('1')"><i class="icon-delete"></i></a>
+          </li>
+          <li onclick="return openMediaPopup('I')">
+            <img src="<?php echo UPLOAD_PATH_HTTP;?>/1.jpg" width="100" height="100"/>
+            <span class="media_desc">Video title</span>
+            <span class="media_date">Mar 19,2015</span>
+            <a href="javascript:void(0)" onclick="return deleteVideo('1')"><i class="icon-delete"></i></a>
+          </li>
+          <li onclick="return openMediaPopup('I')">
+            <img src="<?php echo UPLOAD_PATH_HTTP;?>/1.jpg" width="100" height="100"/>
+            <span class="media_desc">Video title</span>
+            <span class="media_date">Mar 19,2015</span>
+            <a href="javascript:void(0)" onclick="return deleteVideo('1')"><i class="icon-delete"></i></a>
+          </li>
+          <li onclick="return openMediaPopup('I')">
+            <img src="<?php echo UPLOAD_PATH_HTTP;?>/1.jpg" width="100" height="100"/>
+            <span class="media_desc">Video title</span>
+            <span class="media_date">Mar 19,2015</span>
+            <a href="javascript:void(0)" onclick="return deleteVideo('1')"><i class="icon-delete"></i></a>
+          </li>
+          <li onclick="return openMediaPopup('I')">
+            <img src="<?php echo UPLOAD_PATH_HTTP;?>/1.jpg" width="100" height="100"/>
+            <span class="media_desc">Video title</span>
+            <span class="media_date">Mar 19,2015</span>
+            <a href="javascript:void(0)" onclick="return deleteVideo('1')"><i class="icon-delete"></i></a>
+          </li>
+          <li onclick="return openMediaPopup('I')">
+            <img src="<?php echo UPLOAD_PATH_HTTP;?>/1.jpg" width="100" height="100"/>
+            <span class="media_desc">Video title</span>
+            <span class="media_date">Mar 19,2015</span>
+            <a href="javascript:void(0)" onclick="return deleteVideo('1')"><i class="icon-delete"></i></a>
+          </li>
+          <li onclick="return openMediaPopup('I')">
+            <img src="<?php echo UPLOAD_PATH_HTTP;?>/1.jpg" width="100" height="100"/>
+            <span class="media_desc">Video title</span>
+            <span class="media_date">Mar 19,2015</span>
+            <a href="javascript:void(0)" onclick="return deleteVideo('1')"><i class="icon-delete"></i></a>
+          </li>
+          <li onclick="return openMediaPopup('I')">
+            <img src="<?php echo UPLOAD_PATH_HTTP;?>/1.jpg" width="100" height="100"/>
+            <span class="media_desc">Video title</span>
+            <span class="media_date">Mar 19,2015</span>
+            <a href="javascript:void(0)" onclick="return deleteVideo('1')"><i class="icon-delete"></i></a>
+          </li>
+          <li onclick="return openMediaPopup('I')">
+            <img src="<?php echo UPLOAD_PATH_HTTP;?>/1.jpg" width="100" height="100"/>
+            <span class="media_desc">Video title</span>
+            <span class="media_date">Mar 19,2015</span>
+            <a href="javascript:void(0)" onclick="return deleteVideo('1')"><i class="icon-delete"></i></a>
+          </li>
+          <li onclick="return openMediaPopup('I')">
+            <img src="<?php echo UPLOAD_PATH_HTTP;?>/1.jpg" width="100" height="100"/>
+            <span class="media_desc">Video title</span>
+            <span class="media_date">Mar 19,2015</span>
+            <a href="javascript:void(0)" onclick="return deleteVideo('1')"><i class="icon-delete"></i></a>
+          </li>
+        </ul>
+      </div>
+      <div class="gallary_grid" id="audio_grid" style="display:none;">
+        <ul>
+          <li id="audio_1">
+            <audio controls>
+              <source src="horse.mp3" type="audio/mpeg">
+            </audio>
+            <span class="media_desc">Thousand suns</span>
+            <span class="media_date">Mar 19,2015</span>
+            <a href="javascript:void(0)" onclick="return deleteAudio('1')"><i class="icon-delete"></i></a>
+          </li>
+          <li>
+            <audio controls>
+              <source src="horse.mp3" type="audio/mpeg">
+            </audio>
+            <span class="media_desc">Thousand suns</span>
+            <span class="media_date">Mar 19,2015</span>
+            <a href="javascript:void(0)" onclick="return deleteAudio('1')"><i class="icon-delete"></i></a>
+          </li>
+          <li>
+            <audio controls>
+              <source src="horse.mp3" type="audio/mpeg">
+            </audio>
+            <span class="media_desc">Thousand suns</span>
+            <span class="media_date">Mar 19,2015</span>
+            <a href="javascript:void(0)" onclick="return deleteAudio('1')"><i class="icon-delete"></i></a>
+          </li>
+          <li>
+            <audio controls>
+              <source src="horse.mp3" type="audio/mpeg">
+            </audio>
+            <span class="media_desc">Thousand suns</span>
+            <span class="media_date">Mar 19,2015</span>
+            <a href="javascript:void(0)" onclick="return deleteAudio('1')"><i class="icon-delete"></i></a>
+          </li>
+          <li>
+            <audio controls>
+              <source src="horse.mp3" type="audio/mpeg">
+            </audio>
+            <span class="media_desc">Thousand suns</span>
+            <span class="media_date">Mar 19,2015</span>
+            <a href="javascript:void(0)" onclick="return deleteAudio('1')"><i class="icon-delete"></i></a>
+          </li>
+          <li>
+            <audio controls>
+              <source src="horse.mp3" type="audio/mpeg">
+            </audio>
+            <span class="media_desc">Thousand suns</span>
+            <span class="media_date">Mar 19,2015</span>
+            <a href="javascript:void(0)" onclick="return deleteAudio('1')"><i class="icon-delete"></i></a>
+          </li>
+          <li>
+            <audio controls>
+              <source src="horse.mp3" type="audio/mpeg">
+            </audio>
+            <span class="media_desc">Thousand suns</span>
+            <span class="media_date">Mar 19,2015</span>
+            <a href="javascript:void(0)" onclick="return deleteAudio('1')"><i class="icon-delete"></i></a>
+          </li>
+          <li>
+            <audio controls>
+              <source src="horse.mp3" type="audio/mpeg">
+            </audio>
+            <span class="media_desc">Thousand suns</span>
+            <span class="media_date">Mar 19,2015</span>
+            <a href="javascript:void(0)" onclick="return deleteAudio('1')"><i class="icon-delete"></i></a>
+          </li>
+          <li>
+            <audio controls>
+              <source src="horse.mp3" type="audio/mpeg">
+            </audio>
+            <span class="media_desc">Thousand suns</span>
+            <span class="media_date">Mar 19,2015</span>
+            <a href="javascript:void(0)" onclick="return deleteAudio('1')"><i class="icon-delete"></i></a>
+          </li>
+          
+        </ul>
+      </div>
+  </div>
+</div>
+
+<!-- POPUP Design -->
+<div class="fade" id="fade" style="display:none;"></div>
+<div class="popup" style="display:none;" id="image_popup">
+  <a href="javascript:void(0)" class="close_popup" onclick="return closeMediaPopup('I')">Close</a>
+  <h3>Image / Video Title</h3>
+  <img src="<?php echo UPLOAD_PATH_HTTP;?>/1.jpg" width="100%" height="70%"/>
+  <article>This is a test description This is a test description This is a test description </article>
+  <span class="datetime">Mar 29, 2015 5.00 pm</span>
+</div>
+<div class="popup" style="display:none;" id="video_popup" onclick="return closeMediaPopup('V')">
+  <a href="javascript:void(0)" class="close_popup">Close</a>
+  <h3>Image / Video Title</h3>
+  <iframe width="100%" height="70%"
+    src="http://www.youtube.com/embed/XGSy3_Czz8k?autoplay=1">
+  </iframe>
+  <article>This is a test description This is a test description This is a test description </article>
+  <span class="datetime">Mar 29, 2015 5.00 pm</span>
+</div>
+<?php 
+	include(NAVIGATION_PATH."/footer.php");
+?>

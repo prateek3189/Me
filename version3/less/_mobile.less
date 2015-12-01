@@ -1,0 +1,185 @@
+@import "_variable.less";
+
+/*Mobile Devices Landscape and portrait*/
+@media only screen and (min-device-width: 320px) and (max-device-width: 640px) and (-webkit-min-device-pixel-ratio: 2) {
+  
+  /*Common CSS*/
+  header{
+    .welcome_heading{
+      margin-right:0;
+    }
+  }
+  h3{
+    text-align:center;
+    font-size:20px;
+  }
+  /*Common Classes*/
+  .container{
+    width:100%;
+  }
+  .inputfield, .selectBox{
+    width:100%;
+    height:50px;
+    font-size:18px;
+  }
+  .inputbutton{
+    width:100%;
+    height:50px;
+  }
+  .app_link{
+    width: 100%;    
+    height: 50px;    
+    text-align:center;    
+    margin: 15px 0;
+    font-size: 18px;
+    border: 1px solid @grayC; 
+    padding:15px;
+    background:@gray9;
+    color:@white;
+    border-radius:3px;    
+  }
+  /*Login Box*/
+  .login_box{
+    border: 0;
+    width: 100%;
+    top: 0;
+    padding: 20px;
+    box-shadow:none;
+    label{
+      width:100%;
+    }
+  }
+  
+  /*Navbar*/
+  ul.navbar{
+    margin-bottom:20px;
+    border-bottom:1px solid @blue1;
+    li.mobile_nav{
+      display:block;
+    }
+    li.dektop_nav{
+      display:none;
+    }
+    a{
+      i{
+        position:static;
+      }
+    }
+    .message_count{
+      top:-15px;
+    }
+  }
+    
+  /*Left side for notification*/
+  asside{
+    display:none;
+    width:100%;
+    height:100%;
+    border:0;
+    position:absolute;
+    h3{
+      display:none;
+    }
+  }
+  .content{
+    width:100%;
+    margin-bottom:20px;
+    padding:0 10px;
+    /*Status*/
+    .update_status{
+      .post_data{
+         .image_container{
+           img{
+            width:100%;
+           }
+         }
+      }
+      .post_pic, .post_vdo{
+        input{
+          width:100%;
+        }
+      }
+    }
+    
+    /*Gallery*/
+    .gallary_grid{
+      ul{
+        li{
+          width:120px;
+          img{
+            width:100px;
+            height:100px;
+          }
+        }
+      }
+    }
+    /*Friends*/
+    .friends_search_bar{
+      button{
+        width:100%;
+        height:50px;
+      }
+    }
+    /*Profile*/
+    .profile{
+       .profile_friends,.profile_image, h3{
+        display:none;
+       }
+       .profile_status{
+        width:100%;
+        .post_time{
+          color:@blue1;
+          font-size:12px;
+          text-align:initial;
+        }
+       }
+    }
+    /*Messages*/
+    .message_list{
+      margin:0;
+      .message_icon{
+        width:25%;
+      }
+      li{
+        padding:20px;
+      }
+      ul.message_thread{
+        border:0;
+        margin:0;
+        li{
+          .message_text_mine, .message_text_your{
+            span{
+              font-size:12px;
+            }
+          }
+        }
+      }
+      .write_textbox{
+        padding:0 20px;
+        margin:0;
+        margin-bottom:20px;
+      }
+    }
+    
+    /*Settings*/
+    .formTable{
+      border:0;
+      box-shadow:0px 12px 20px -10px @grayC;
+    }
+  }
+  /*Popup*/
+  .popup{
+    position:fixed;
+    top:0px;
+    left:0;
+    right:0;
+    margin:0 auto;
+    z-index:1000;
+    background:@white;
+    width:100%;    
+    iframe{
+      width:100%;
+      height:30%;
+    }
+  }
+} 

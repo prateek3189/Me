@@ -1,0 +1,116 @@
+<?php 
+	include(NAVIGATION_PATH."/header.php");
+?>
+<div class="container">
+  <?php include(NAVIGATION_PATH."/navbar.php");?>
+  <?php include(NAVIGATION_PATH."/notification.php");?>
+  <div class="content">
+      <ul class="update_status">
+        <li>
+          <div class="post_div">
+            <textarea id="post_text" placeholder="What's on your mind..."></textarea>
+          </div>
+          <div class="post_pic" style="display:none;">
+            <input type="file" id="post_pic" name="post_pic"/>
+            <textarea id="pic_desc" placeholder="Say something about this photo..."></textarea>
+            <div class="button-div">
+              <a href="">Upload</i></a>
+            </div>
+          </div>
+          <div class="post_vdo" style="display:none;">
+            <input type="file" id="post_vdo" name="post_vdo"/>
+            <br/>
+            <strong>OR</strong>
+            <br/>
+            <input type="text" id="youtube_url" name="youtube_url" placeholder="Copy and paste a Youtube URL..."/>
+          </div>
+          
+          <div class="button-div">
+            <a href="">Update Status</a>
+            <a href="">Photo</i></a>
+            <a href="">Video</a>
+          </div>
+        </li>
+        <li>
+          <div class="user_data">
+            <a href=""><img src="<?php echo UPLOAD_PATH_HTTP;?>/1.jpg"  width="50" height="50"/></a>
+            <a href=""><strong>Christian Bale</strong></a>
+            <span class="post_time">Mar 20, 2015 3:00 pm</span>
+            <span class="action_icon">
+              <a href=""><i class="icon-edit-status"></i></a>
+              <a href=""><i class="icon-delete"></i></a>
+            </span>
+          </div>
+          <div class="post_data">
+            <article>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+                It was popularised in the 1960s with the release of Letraset sheets containing 
+                Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of 
+                Lorem Ipsum.
+            </article>
+          </div>
+        </li>
+        <li>
+          <div class="user_data">
+            <a href=""><img src="<?php echo UPLOAD_PATH_HTTP;?>/1.jpg"  width="50" height="50"/></a>
+            <a href=""><strong>Christian Bale</strong></a>
+            <span class="post_time">Mar 20, 2015 3:00 pm</span>
+            <span class="action_icon">
+              <a href=""><i class="icon-edit-status"></i></a>
+              <a href=""><i class="icon-delete"></i></a>
+            </span>
+          </div>
+          <div class="post_data">
+            <div class="image_container">              
+              <img src="<?php echo POST_IMAGE_HTTP;?>1.jpg" alt="Some Image" />
+            </div>
+            <span class="image_desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</span>            
+          </div>
+        </li>
+        <li>
+          <div class="user_data">
+            <a href=""><img src="<?php echo UPLOAD_PATH_HTTP;?>/1.jpg"  width="50" height="50"/></a>
+            <a href=""><strong>Christian Bale</strong></a>
+            <span class="post_time">Mar 20, 2015 3:00 pm</span>
+            <span class="action_icon">
+              <a href=""><i class="icon-edit-status"></i></a>
+              <a href=""><i class="icon-delete"></i></a>
+            </span>
+          </div>
+          <div class="post_data">
+            <div class="image_container">              
+              <video height="350" width="100%" controls>
+                <source src="<?php echo POST_IMAGE_HTTP;?>small.mp4" type="video/mp4">
+              </video>
+            </div>
+            <span class="image_desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</span>            
+          </div>
+        </li>
+         
+        <li>
+          <div class="user_data">
+            <a href=""><img src="<?php echo UPLOAD_PATH_HTTP;?>/1.jpg"  width="50" height="50"/></a>
+            <a href=""><strong>Christian Bale</strong></a>
+            <span class="post_time">Mar 20, 2015 3:00 pm</span>
+            <span class="action_icon">
+              <a href=""><i class="icon-edit-status"></i></a>
+              <a href=""><i class="icon-delete"></i></a>
+            </span>
+          </div>
+          <div class="post_data">
+            <div class="image_container">              
+              <iframe width="100%" height="350" src="http://www.youtube.com/embed/XGSy3_Czz8k?autoplay=1"></iframe>
+            </div>
+            <span class="image_desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</span>            
+          </div>
+        </li>
+        
+      </ul>
+  </div>
+</div>
+<?php 
+	include(NAVIGATION_PATH."/footer.php");
+?>

@@ -1,0 +1,101 @@
+<?php 
+	include(NAVIGATION_PATH."/header.php");
+?>
+<div class="container">
+  <?php include(NAVIGATION_PATH."/navbar.php");?>
+  <?php include(NAVIGATION_PATH."/notification.php");?>
+  <div class="content">
+    <h3>Edit Profile</h3>
+    <div class="settings_section">
+      <form id="edit_profile" name="edit_profile" action="" method="POST" enctype="multipart/form-data">
+        <ul class="formTable">
+          <li>
+           <img src="<?php echo IMAGE_PATH_HTTP.'/no_img_found.png';?>" width="150" height="150"/>
+          </li>
+          <li>
+            <label>Profile Image:</label>
+            <input type="file" id="profile_picture" name="profile_picture" value=""/>
+          </li>
+          <li>
+            <label>Name:</label>
+            <input type="text" id="name" name="name" value="" class="inputfield"/>
+          </li>
+          <li>
+            <label>Username:</label>
+            <input type="text" id="name" name="name" value="" class="inputfield"/>
+          </li>
+          <li>
+            <label>Email:</label>
+            <input type="email" id="email" name="email" value="" class="inputfield"/>
+          </li>
+          <li>
+            <label>Phone:</label>
+            <input type="text" id="phone" name="phone" value="" class="inputfield"/>
+          </li>
+          <li>
+            <label>Date of Birth:</label>
+            <input type="date" id="date" name="date" value="" class="inputfield"/>
+          </li>
+          <li>
+            <label>Gender:</label>
+            <input type="radio" id="gender" name="gender" value="M"/> Male
+            <input type="radio" id="gender" name="gender" value="F"/> Female
+          </li>
+          <li>
+            <label>City:</label>
+            <input type="text" id="city" name="city" value="" class="inputfield"/>
+          </li>
+          <li>
+            <label>State:</label>
+            <input type="text" id="state" name="state" value="" class="inputfield"/>
+          </li>
+          <li>
+            <label>Country:</label>
+            <input type="text" id="country" name="country" value="" class="inputfield"/>
+          </li>
+          <li>
+              <button id="submit" name="submit" type="submit">Update Profile</button>
+              <a href="">Reset</a>
+          </li>
+        </ul>
+      </form>
+    </div>
+    <h3>Change Password</h3>
+    <div class="settings_section">
+      <form id="edit_profile" name="edit_profile" action="" method="POST" enctype="multipart/form-data">
+        <ul class="formTable">
+          <li>
+            <label>Old Password:</label>
+            <input type="password" id="old_password" name="old_password" value="" class="inputfield"/>
+          </li>
+          <li>
+            <label>New Password:</label>
+            <input type="password" id="new_password" name="new_password" value="" class="inputfield"/>
+          </li>
+          <li>
+            <label>Confirm Password:</label>
+            <input type="password" id="confirm_password" name="confirm_password" value="" class="inputfield"/>
+          </li>
+          <li>
+              <button id="submit" name="submit" type="submit">Update Password</button>
+              <a href="">Reset</a>
+          </li>
+        </ul>
+      </form>
+    </div>
+    <h3>Location</h3>
+    <div class="settings_section">
+      <ul class="formTable">
+        <li>
+            <button id="button" name="location" type="location">Update My Location</button>
+        </li>
+        <li>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.686230274408!2d73.90866055000001!3d18.543076049999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c10db2c35fb9%3A0x5e3e828c472b0014!2sMarigold+complex%2C+Kalyani+Nagar%2C+Pune%2C+Maharashtra!5e0!3m2!1sen!2sin!4v1443507458885" width="80%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<?php 
+	include(NAVIGATION_PATH."/footer.php");
+?>

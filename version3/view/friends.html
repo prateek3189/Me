@@ -1,0 +1,55 @@
+<?php 
+	include(NAVIGATION_PATH."/header.php");
+?>
+<div class="container">
+  <?php include(NAVIGATION_PATH."/navbar.php");?>
+  <?php include(NAVIGATION_PATH."/notification.php");?>
+  <div class="content">
+      <div class="friends_search_bar">
+        <input list="friends" class="inputfield" placeholder="Search">
+        <datalist id="friends">
+          <option value="John Rambo">
+          <option value="Rocky Balboa">
+          <option value="Bruce Wayn">
+          <option value="Anthony Stark">
+        </datalist>&nbsp;
+        <button class="fr" id="find_my_friends" name="find_my_friends" onclick="javascript: window.location.replace('<?php echo FOLDER_PATH_HTTP;?>friend_finder.php');">Find My Friends</button>
+      </div>
+      
+      <div class="friends_list">
+        <ul>
+          <li id="drag1"  draggable="true" ondragstart="drag(event)">
+            <img src="<?php echo UPLOAD_PATH_HTTP;?>/1.jpg" width="100" height="100"/>
+            <a href="profile.php">Bruce Wayn</a>
+            <div class="friends_icon">
+              <a href=""><i class="icon-add-friend"></i></a>
+            </div>
+          </li>
+          <li>
+            <img src="<?php echo UPLOAD_PATH_HTTP;?>/1.jpg" width="100" height="100"/>
+            <a href="profile.php">Bruce Wayn</a>
+            <div class="friends_icon">
+              <a href=""><i class="icon-add-friend"></i></a>
+            </div>
+          </li>
+          <li>
+            <img src="<?php echo UPLOAD_PATH_HTTP;?>/1.jpg" width="100" height="100"/>
+            <a href="profile.php">Bruce Wayn</a>
+            <div class="friends_icon">
+              <a href=""><i class="icon-add-friend"></i></a>
+            </div>
+          </li>
+          <li>
+            <img src="<?php echo UPLOAD_PATH_HTTP;?>/1.jpg" width="100" height="100"/>
+            <a href="profile.php">Bruce Wayn</a>
+            <div class="friends_icon">
+              <a href=""><i class="icon-add-friend"></i></a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+</div>
+<?php 
+	include(NAVIGATION_PATH."/footer.php");
+?>

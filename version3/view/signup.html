@@ -1,0 +1,33 @@
+<?php 
+	include_once(NAVIGATION_PATH."/header.php");
+?>
+	<div class="login_box">
+    <form id="form_sign_up" method="POST" action="" onsubmit="return validateForm(this)">
+      <ul>
+        <li>
+          <h3>Sign Up</h3>
+        </li>
+        <li>
+          <label><strong class="red"></strong> Name:</label>
+          <input type="text" class="inputfield" value="" name="name" id="name">
+        </li>
+        <li>
+          <label><strong class="red">*</strong> Username:</label>
+          <input type="text" class="inputfield required" value="" data-valid="Please enter Username" name="username" id="username">
+          <span class="errormessage" id="error_username"></span>
+        </li>
+        <li>
+          <label><strong class="red">*</strong> Password:</label>
+          <input type="password" class="inputfield required" value="" data-valid="Please enter Password" name="password" id="password">
+          <span class="errormessage" id="error_password"></span>
+        </li>
+      <li class="login_button">
+        <button type="submit" class="inputbutton" name="submit" id="submit">Sign Up</button>
+        <a class="app_link" href="<?php echo FOLDER_PATH_HTTP;?>">Back</a>
+      </li>
+      </ul>
+    </form>
+  </div>
+<?php 
+	include(NAVIGATION_PATH."/footer.php");
+?>
