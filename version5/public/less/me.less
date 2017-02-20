@@ -1,0 +1,80 @@
+@import "_variable.less";
+
+/*Mixins*/
+.font-comic{font-family:Comic Sans MS;}
+.font-common{font-family:helvetica, arial, sans-serif;}
+/*Common CSS*/
+*{
+  box-sizing:border-box;
+}
+a{
+    text-decoration:none;
+    color:@blue1;
+  }
+body{
+  padding:0;
+  margin:0;
+  font-size:14px;
+  background:@white;
+  .font-common();
+}
+article{
+  padding:10px 0;
+}
+ul{
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+h1,h2,h3,h4,h5,h6{
+  margin:0;
+  color:@blue1;
+}
+
+/*Common Classes*/
+.red{
+  color:@red1;
+}
+.content {
+    width: 100%;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    border-bottom: 1px solid #666;
+    .logo {
+        width: 50px;
+        padding: 20px 0 0 20px;
+    }
+}
+
+.formBox {
+    width: 500px;
+    border: 1px solid @gray9;
+    margin: 0 auto;
+    position: relative;
+    top: 100px;
+    padding: 20px;
+    box-shadow:0 8px 6px -6px @grayC;
+}
+
+form {
+    label{
+      display:inline-block;
+      margin:10px 0;
+      width:150px;
+      font-size: 16px;
+    }
+
+    input[type=text], input[type=password], select {
+        height:25px;
+        border:1px solid @grayC;
+        width:250px;
+        padding:0 10px;
+    }
+}
+
+.login_box {
+    margin: 0 auto;
+}
